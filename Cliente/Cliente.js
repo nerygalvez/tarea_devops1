@@ -6,9 +6,7 @@ var request = require('sync-request');
 
 app.get('/', function (req, res) {
 	
-	//console.log(obtenerPilot());
 	var respuesta1 = request('GET', 'http://localhost:3001/');
-	//console.log(respuesta.getBody('utf8'));
 	var respuesta2 = request('GET', 'http://localhost:3002/');
 
 	var datos = "DATOS DEL PILOTO ---> " + respuesta1.getBody('utf8')
