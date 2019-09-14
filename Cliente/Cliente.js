@@ -17,3 +17,5 @@ app.get('/', function (req, res) {
 app.listen(3000, function () {
   console.log('Micro servicio del Cliente corriendo en http://localhost:3000/');
 });
+
+module.exports = app;
